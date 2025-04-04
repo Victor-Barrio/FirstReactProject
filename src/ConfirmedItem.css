@@ -1,0 +1,54 @@
+.order-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--rose300);
+}
+
+.order-image {
+    width: 45px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.order-Details {
+    flex-grow: 1;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order-itemTitle {
+    font-size: 13px;
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    display: block;
+}
+
+.order-priceQuantity {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.order-quantity {
+    font-size: 13px;
+    font-weight: var(--font-weight-medium);
+    color: var(--red);
+}
+
+.order-price {
+    font-size: 13px;
+    color: var(--rose400);
+}
+
+.order-total {
+    font-size: 15px;
+    font-weight: var(--font-weight-medium);
+}

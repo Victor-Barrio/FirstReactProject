@@ -1,0 +1,30 @@
+#root {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Media Queries for Tabblet */
+@media (min-width: 768px) {
+  #root {
+    justify-content: center;
+    padding: 50px;
+  }
+}
+
+/* Media Querie for Desktop */
+@media (min-width: 1024px) {
+  #root {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+  }
+}

@@ -1,0 +1,105 @@
+.confirmed-order {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.confirmed-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--rose50);
+    padding: 25px;
+    gap: 25px;
+    border-radius: 15px 15px 0 0;
+}
+
+.confirmed-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.confirmed-textTitle {
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.15;
+}
+
+.confirmed-textSubtitle {
+    color: var(--rose500);
+}
+
+.confirmed-orderTotal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rose100);
+    border-radius: 10px;
+    padding: 5px 25px 25px;
+    height: auto;
+    max-height: 305px;
+    overflow-y: auto;
+}
+
+.confirmed-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmed-total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.confirmed-totalTitle {
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+}
+
+.confirmed-totalPrice {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+}
+
+.confirmed-btn {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--red);
+    color: var(--rose50);
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.confirmed-btn:hover {
+    background-color: var(--redHover);
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 1024px) {
+    .confirmed-order {
+        align-items: center;
+    }
+    
+    .confirmed-container {
+        width: 600px;
+        border-radius: 15px;
+    }
+}

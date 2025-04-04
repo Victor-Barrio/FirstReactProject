@@ -1,0 +1,30 @@
+.desserts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.desserts-title {
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+}
+
+.desserts-containerCards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .desserts-container {
+        max-width: 820px;
+    }
+    
+    .desserts-containerCards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+    }
+}

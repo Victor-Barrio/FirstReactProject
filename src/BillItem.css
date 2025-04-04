@@ -1,0 +1,56 @@
+.bill-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--rose100);
+}
+
+.bill-itemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.bill-itemTitle {
+    font-size: 15px;
+    font-weight: var(--font-weight-medium);
+}
+
+.bill-itemPrice {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.bill-itemQuantity {
+    font-size: 15px;
+    font-weight: var(--font-weight-medium);
+    color: var(--red);
+    padding-right: 8px;
+}
+
+.bill-itemPriceValue {
+    font-size: 15px;
+    color: var(--rose400);
+}
+
+.bill-itemTotal {
+    font-size: 15px;
+    font-weight: var(--font-weight-medium);
+    color: var(--rose500);
+}
+
+.bill-itemDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: auto;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid var(--rose400);
+    cursor: pointer;
+}
